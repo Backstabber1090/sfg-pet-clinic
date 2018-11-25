@@ -1,4 +1,4 @@
-package com.sood.vaibhav.sfgpetclinic;
+package java.com.sood.vaibhav.sfgpetclinic;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
