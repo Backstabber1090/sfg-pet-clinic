@@ -2,10 +2,12 @@ package com.sood.vaibhav.sfgpetclinic.services.map;
 
 import java.util.Set;
 
-import com.sood.vaibhav.sfgpetclinic.model.Owner;
-import com.sood.vaibhav.sfgpetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+import com.sood.vaibhav.sfgpetclinic.model.Owner;
+import com.sood.vaibhav.sfgpetclinic.services.OwnerService;
+@Service
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	@Override
 	public Set<Owner> findAll() {// TODO Auto-generated method stub

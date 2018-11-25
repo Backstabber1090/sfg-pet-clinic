@@ -2,10 +2,12 @@ package com.sood.vaibhav.sfgpetclinic.services.map;
 
 import java.util.Set;
 
-import com.sood.vaibhav.sfgpetclinic.model.Pet;
-import com.sood.vaibhav.sfgpetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+import com.sood.vaibhav.sfgpetclinic.model.Pet;
+import com.sood.vaibhav.sfgpetclinic.services.PetService;
+@Service
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
 	public Set<Pet> findAll() {// TODO Auto-generated method stub

@@ -2,9 +2,9 @@ package com.sood.vaibhav.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends BaseEntity{
 private PetType petType;
-private Long id;
+
 public PetType getPetType() {
 	return petType;
 }
@@ -23,12 +23,7 @@ public LocalDate getBirthDate() {
 public void setBirthDate(LocalDate birthDate) {
 	this.birthDate = birthDate;
 }
-public Long getId() {
-	return id;
-}
-public void setId(Long id) {
-	this.id = id;
-}
+
 private Owner owner;
 private LocalDate birthDate;
 
